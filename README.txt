@@ -13,7 +13,7 @@ after I was done with the HTML I worked on the css of the card
 Then I started working on the Page
 
 After I was done it was time to think about the responsiness for mobile
-
+which was done after many trials and errors to be honest 
 
 
 

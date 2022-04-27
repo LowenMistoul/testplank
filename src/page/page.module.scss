@@ -81,3 +81,16 @@
 }
 
 
+@media only screen and (max-width: 800px){
+    .container{
+        width: 90% ;
+        padding: 80px 5% 0px 5%;
+        padding-bottom: 300px;
+    }
+
+    .nav{
+        flex-direction: column;
+        gap: 0px;
+        margin: 0 auto;
+    }
+}

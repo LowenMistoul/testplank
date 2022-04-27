@@ -72,3 +72,42 @@
     width:20px;
     margin-left: 4px;
 }
+
+@media only screen and (max-width: 800px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .button{
+        float: none;
+    }
+
+    .line{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .excerpt{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    
+    .title,.titlemarg{
+        width: 100%;
+    }
+
+    .button{
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img{
+        margin: 0 auto;
+    }
+    .div{
+        margin-left: 0%;
+        text-align: center;
+    }
+}
