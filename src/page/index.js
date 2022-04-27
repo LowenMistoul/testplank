@@ -3,9 +3,6 @@ import React from 'react'
 import Card from '../card'
 import axios from 'axios';
 import 'typeface-roboto';
-import { ReactComponent as Circles } from '../assets/asset1.svg';
-import { ReactComponent as Green } from '../assets/asset2.svg';
-import { ReactComponent as Red } from '../assets/asset3.svg';
 
 
 

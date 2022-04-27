@@ -5,8 +5,9 @@ import  Arrow  from '../assets/arrow-icon.js';
 
 
 export default function Card(props) {
-    const[color ,setColor]=useState("#EEECEC")
-    console.log(props);
+  
+  const[color ,setColor]=useState("#EEECEC")
+    
   return (
     <>
         <div className={styles.container}>
@@ -25,7 +26,7 @@ export default function Card(props) {
                        style={{marginTop:JSON.stringify(props.card.title).length > 21 ?"20px":"60px"}}
                        className={styles.button}>
                         View Case Studies 
-                        <Arrow color={color}  className={styles.arrow}/> 
+                        <Arrow color={color} className={styles.arrow}/> 
                     </p>
                 </a> 
                

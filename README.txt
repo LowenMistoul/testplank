@@ -7,7 +7,7 @@ I'm gonna focus on the files structure first.
 
 I made some changes and tests with axio so that I'm sure the right data goes to the right components
 
-I started working on the reusable components first 
+I started working on the reusable Cards components first 
 after I was done with the HTML I worked on the css of the card 
 
 Then I started working on the Page
@@ -26,5 +26,10 @@ But I realise that it was actually in te design's instruction already
 I also realised that the arrow SVG needed some changes to be able to fit 
 with the over animation I added nothing really fancy I think
 
+Came back at a problem I had yesterday and tried a new solution with 
+fresh eyes 
+
+On the mobile part I was woried about the definition of the Cards so I added 
+a border and a subtle hover effect .
 
 
