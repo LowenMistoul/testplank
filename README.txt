@@ -21,13 +21,13 @@ for mobile but did not find one I liked enough
 I then implemented the links and hover animation 
 
 Then I thought about Some animation for the Navbar instead
-But I realise that it was actually in te design's instruction already
+But I realised that it was actually in te design's instruction already
 
 I also realised that the arrow SVG needed some changes to be able to fit 
 with the over animation I added nothing really fancy I think
 
 Came back at a problem I had yesterday and tried a new solution with 
-fresh eyes 
+fresh eyes - it worked !
 
 On the mobile part I was woried about the definition of the Cards so I added 
 a border and a subtle hover effect .
