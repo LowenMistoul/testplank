@@ -39,8 +39,16 @@
     text-transform: uppercase;
     color: #EEECEC;
     margin-bottom: 28px;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px black;
+    transition: box-shadow 0.4s linear;
 }
 
+
+.nav p:hover { 
+    box-shadow: 0px 0px 0px 1px #EEECEC; 
+}
+  
 .title{
     width: 158px;
     height: 56px;

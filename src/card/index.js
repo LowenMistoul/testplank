@@ -5,7 +5,7 @@ import { ReactComponent as Arrow } from '../assets/arrow-icon.svg';
 
 
 export default function Card(props) {
-
+console.log(props);
   return (
     <>
         <div className={styles.container}>
@@ -15,12 +15,13 @@ export default function Card(props) {
                 <div className={styles.line}/>
                 <p className={ JSON.stringify(props.card.title).length > 21 ? styles.titlemarg:styles.title}>{props.card.title}</p>
                 <p  className={styles.excerpt}>{props.card.excerpt} </p>
-                <a>
+                <a href={props.card.link}>
                     <p className={styles.button}>
                         View Case Studies 
-                        <Arrow  className={styles.arrow}/>  
+                        <Arrow  className={styles.arrow}/> 
                     </p>
-                </a>
+                </a> 
+               
             </div>   
         </div>
     </>
