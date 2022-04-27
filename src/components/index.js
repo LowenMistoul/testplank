@@ -1,11 +1,11 @@
 import styles from './card.module.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import 'typeface-roboto';
 import { ReactComponent as Arrow } from '../assets/arrow-icon.svg';
 
 
 export default function Card(props) {
-    console.log(props)
+
   return (
     <>
         <div className={styles.container}>
@@ -13,8 +13,8 @@ export default function Card(props) {
             <div className={styles.div}>
                 <p className={styles.category}>{props.card.categories[0].title}</p>
                 <div className={styles.line}/>
-                <p className={styles.title}>{props.card.title}</p>
-                <p className={styles.excerpt}>{props.card.excerpt} </p>
+                <p className={ JSON.stringify(props.card.title).length > 21 ? styles.titlemarg:styles.title}>{props.card.title}</p>
+                <p  className={styles.excerpt}>{props.card.excerpt} </p>
                 <a>
                     <p className={styles.button}>
                         View Case Studies 

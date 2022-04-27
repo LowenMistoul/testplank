@@ -5,6 +5,15 @@ I'm gonna focus on the files structure first.
     - a folder for reusable components
     - a folder for assets (svg files)
 
-I make changes so that I'm sure the right data goes to the right components
+I made some changes so that I'm sure the right data goes to the right components
 
-I'm start working on the reusable components first 
+I started working on the reusable components first 
+after I was done with the HTML I worked on the css of the card 
+
+Then I started working on the Page
+
+After I was done it was time to think about the responsiness for mobile
+
+
+
+
