@@ -23,7 +23,8 @@ I then implemented the links and hover animation
 Then I thought about Some animation for the Navbar instead
 But I realise that it was actually in te design's instruction already
 
-
+I also realised that the arrow SVG needed some changes to be able to fit 
+with the over animation I added nothing really fancy I think
 
 
 

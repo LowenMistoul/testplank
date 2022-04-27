@@ -1,11 +1,12 @@
 import styles from './card.module.scss';
 import React, { useState } from 'react';
 import 'typeface-roboto';
-import { ReactComponent as Arrow } from '../assets/arrow-icon.svg';
+import  Arrow  from '../assets/arrow-icon.js';
 
 
 export default function Card(props) {
-console.log(props);
+    const[color ,setColor]=useState("#EEECEC")
+    console.log(props);
   return (
     <>
         <div className={styles.container}>
@@ -16,9 +17,11 @@ console.log(props);
                 <p className={ JSON.stringify(props.card.title).length > 21 ? styles.titlemarg:styles.title}>{props.card.title}</p>
                 <p  className={styles.excerpt}>{props.card.excerpt} </p>
                 <a href={props.card.link}>
-                    <p className={styles.button}>
+                    <p onMouseEnter={() => setColor("#000000")}
+                       onMouseLeave={() => setColor("#EEECEC")}
+                       className={styles.button}>
                         View Case Studies 
-                        <Arrow  className={styles.arrow}/> 
+                        <Arrow color={color}  className={styles.arrow}/> 
                     </p>
                 </a> 
                
