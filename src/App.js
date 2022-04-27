@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Page from './page'
+import axios from 'axios';
+
+
+const catURL = "https://plankdesign.com/wp-json/plank/v1/fed-test/categories";
 
 function App() {
+  const [categorie, setCategorie] = React.useState(null);
+  React.useEffect(() => {
+    axios.get(catURL).then((response) => {
+      setCategorie(response.data);
+    });
+  }, []);
+  
+  if (!categorie) return null;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Page categorie={categorie} />
+    </>
   );
 }
 
